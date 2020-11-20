@@ -1,67 +1,152 @@
-.header {
-    width: 100%;
-    height: 500px;
+.container {
     display: flex;
-    margin: 0 auto;
-    
-    
-}
-.greet {
-    position: absolute;
-    width: 30%;
-    justify-content: center;
-    top: 150px;
-}
-h2 span {
-	color			: white;
-	font			: bold 24px/45px Helvetica, Sans-Serif;
-	letter-spacing		: -1px;
-	background		: rgb(0, 0, 0); /* на случай, если следующая строка не сработает */
-	background		: rgba(0, 0, 0, 0.7);
-	padding			: 10px;
-}
-.contacts {
-    text-align: right;
-    position: absolute;
-    width: 95%;
-    justify-content: right;
-    top: 150px;
-    
-}
-h1 span {
-	color			: white;
-	font			: bold 24px/45px Helvetica, Sans-Serif;
-	letter-spacing		: -1px;
-	background		: rgb(0, 0, 0); /* на случай, если следующая строка не сработает */
-	background		: rgba(0, 0, 0, 0.7);
-	padding			: 10px;
-}
-
-
-.column {
-    float: left;
-}
-
-/* Left and right column */
-.column.side {
-    width: 25%;
-    background-color: aquamarine;
-}
-
-/* Middle column */
-.column.middle {
-    width: 50%;
-    background-color: blanchedalmond;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+    flex-wrap: wrap;
+    padding: 60px;
+    background-image: url('back2.jpg');
+    position: fixed;
     width: 100%;
-  }
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+
 }
-.footer {
-    background-color: #dbc8c8;
+.columnAbout {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px #000;
+    background-color: rgb(214, 210, 205);
+    font-style: oblique ;
     text-align: center;
-    padding: 10px;
+    font-size: 35px;
+    position: relative;
+    justify-content: center;
+}    
+.mypic {
+    width: 400px;
+    height: 250px;
+    background-image: url('mypic.jpg');
+    background-size:  cover;
+}
+.name {
+    margin-top: 10px;
+}
+.links {
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+}
+.columnInfo {
+    width: 70%;
+    height: 85%;
+    box-shadow: 0 0 10px #000;
+    margin-left: 50px;
+    background-color: rgb(214, 210, 205);
+    font-style: initial;
+    text-align: center;
+    font-size: 30px;
+   
+}
+.conInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+    height: 85%;
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: center;
+    font-size: 17px;
+    
+
+}
+.hr {
+        size: 2px;
+        color: gray;
+        
+}
+.label {
+    font-style: initial;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 35px;
+    justify-content: center;
+    margin-top: 5px;
+}
+.education {
+    display: block;
+    box-shadow: 0 0 10px #000;
+    width: 210px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 150px;
+    transform: rotate(-15deg);
+    background-color: rgb(214, 210, 205);
+    padding: 3px;
+}
+.langknow {
+    display: block;
+    box-shadow: 0 0 10px #000;
+    width: 200px;
+    height: 130px;
+    margin-top: 100px;
+    margin-left: 150px;
+    transform: rotate(-7deg);
+    background-color: rgb(214, 210, 205);
+    padding: 3px;
+}
+.objective {
+    display: block;
+    width: 300px;
+    height: 110px;
+    margin-top: 100px;
+    margin-left: 150px;
+    box-shadow: 0 0 10px #000;
+    background-color: rgb(214, 210, 205);
+    transform: rotate(-10deg);
+    padding: 3px;
+}
+	
+.break-column {
+  flex-basis: 100%;
+  width: 0;
+}
+.specSkills {
+    display: block;
+    box-shadow: 0 0 10px #000;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 180px;
+    transform: rotate(-10deg);
+    background-color: rgb(214, 210, 205);
+    padding: 3px;
+}
+.persQual {
+    display: block;
+    box-shadow: 0 0 10px #000;
+    width: 140px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 150px;
+    transform: rotate(-10deg);
+    background-color: rgb(214, 210, 205);
+    padding: 5px;
+}
+.hobbies {
+    display: block;
+    box-shadow: 0 0 10px #000;
+    width: 230px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 150px;
+    transform: rotate(-10deg);
+    background-color: rgb(214, 210, 205);
+    padding: 3px;
+    
+}
+.titles {
+    font-weight: bold;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+
 }
